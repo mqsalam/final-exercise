@@ -1,5 +1,5 @@
-# final-exercise
-This repo will be used for the final exercise in the GitHub training course 
-CI Server is located here - https://52.90.100.221
+# hello-jenkins
+My super SIMPLE sample app to test out Jenkins. node.js w/ test script
 
-Simple Jenkins server that will build off master
+http://code.tutsplus.com/tutorials/setting-up-continuous-integration-continuous-deployment-with-jenkins--cms-21511
+Mocha testing framework
