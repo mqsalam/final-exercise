@@ -12,3 +12,5 @@ Mocha testing framework
 CI server for this Training is https://52.90.100.221
 
 https://52.90.100.221/jenkins/buildStatus/icon?job=GitHub Workshop
+
+App server Public IP http://54.172.87.217/
