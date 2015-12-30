@@ -1,6 +1,6 @@
 #!/bin/sh
  
-ssh ec2-user@172.31.55.141 <<EOF
+#!ssh ec2-user@172.31.55.141 <<EOF
   cd ~/hello-jenkins
   git pull
   npm install --production
