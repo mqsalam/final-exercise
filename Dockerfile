@@ -6,7 +6,8 @@ ADD . /usr/src/final-exercise
 
 RUN apt-get update -y
 RUN apt-get install -y nodejs npm
+RUN npm install forever -g
 
 RUN cd /src/final-exercise; npm install
 
-CMD ["node", "/usr/src/final-exercise/app.js"]
+CMD ["forever", "start", "/usr/src/final-exercise/app.js"]
