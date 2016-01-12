@@ -1,9 +1,9 @@
 #!/bin/sh
  
-ssh -i aetas-github.workspace.pem ec2user@10.0.0.43 <<EOF
+#ssh -i aetas-github.workspace.pem ec2user@10.0.0.43 <<EOF
   cd ~/final-exercise
   git pull
   npm install --production
   forever restartall
-  exit
-EOF
+  #exit
+#EOF
