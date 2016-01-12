@@ -1,14 +1,16 @@
 jenkins:
   container_name: jenkins
-  image: jenkins
+  image: reedflinch/jenkins:1.4
   ports: 
    - 8080:8080
   volumes:
    - /home/ec2-user/final-exercise:/var/jenkins
-  links:
-   - node-app
+   - /var/run/docker.sock:/var/run/docker.sock
+   - /usr/bin/docker:/usr/bin/docker
+   - /lib64/libdevmapper.so.1.02:/usr/lib/libdevmapper.so.1.02
+   - /lib64/libudev.so.0:/usr/lib/libudev.so.0
 node-app:
   container_name: node-app
-  build: .
+  image: reedflinch/node-app:1.0
   ports:
    - 80:80

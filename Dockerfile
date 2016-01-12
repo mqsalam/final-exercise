@@ -11,4 +11,4 @@ RUN cd /src/final-exercise; npm install
 RUN npm install --production
 RUN npm install -g forever
 
-CMD ["forever", "start", "/usr/src/final-exercise/app.js"]
+CMD ["node", "/usr/src/final-exercise/app.js"]
