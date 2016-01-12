@@ -4,7 +4,7 @@ jenkins:
   ports: 
    - 8080:8080
   volumes:
-   - /home/ec2-user/final-exercise:/var/lib/jenkins
+   - /home/ec2-user/final-exercise:/var/jenkins
   links:
    - node-app
 node-app:
