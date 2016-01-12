@@ -1,0 +1,14 @@
+jenkins:
+  container_name: jenkins
+  image: jenkins
+  ports: 
+   - 8080:8080
+  volumes:
+   - /home/ec2-user/final-exercise:/var/lib/jenkins
+  links:
+   - node-app
+node-app:
+  container_name: node-app
+  build: .
+  ports:
+   - 80:80
