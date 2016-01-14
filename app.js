@@ -6,13 +6,11 @@ app.get('/', function (req, res) {
 <<<<<<< HEAD
   res.send('Hello GitHub this is team name');
   res.send('Hello GitHub this is team name second time');
-=======
 
   res.send('Hello GitHub this is team name Burroughs');
 
   res.send('Hello GitHub this is Rob');
 
->>>>>>> refs/remotes/origin/master
 });
  
 app.listen(process.env.PORT || 80);
