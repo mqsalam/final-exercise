@@ -3,7 +3,9 @@ var express = require('express');
 var app = express();
 
 app.get('/', function (req, res) {
-<<<<<<< HEAD
+
+  res.send('Hello GitHub this is lisa-thuy-team');
+
   res.send('Hello GitHub this is team name');
   res.send('Hello GitHub this is team name second time');
 
@@ -12,6 +14,7 @@ app.get('/', function (req, res) {
   res.send('Hello GitHub this is team name Burroughs');
 
   res.send('Hello GitHub this is Rob');
+
 
 });
  
