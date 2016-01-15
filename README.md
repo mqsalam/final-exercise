@@ -13,15 +13,16 @@ Mocha testing framework
 
 **App server Public IP http://52.90.96.210**
 
-Update the instance.
+##Set up the pipeline demo on an Amazon EC2 instance running Amazon Linux
+
+###Update the instance.
 
 `$ sudo yum update -y`
 
-Install docker and git.
+###Install docker and git.
 
 `$ sudo yum install -y docker git`
 
-##Set up the pipeline demo on an Amazon EC2 instance running Amazon Linux
 ###Install docker-compose.
 ```
 $ sudo su
