@@ -1,6 +1,6 @@
 jenkins:
   container_name: jenkins
-  image: reedflinch/jenkins:1.4
+  build: ./jenkins
   ports: 
    - 8080:8080
   volumes:
@@ -11,6 +11,6 @@ jenkins:
    - /lib64/libudev.so.0:/usr/lib/libudev.so.0
 node-app:
   container_name: node-app
-  image: reedflinch/node-app:1.0
+  build: .
   ports:
    - 80:80
