@@ -1,4 +1,5 @@
 # hello-jenkins
+
 [![Build Status](https://52.90.96.210/jenkins/buildStatus/icon?job=Deploy Node on Commit)](http://52.90.96.210/jenkins/job/Deploy%20Node%20on%20Commit/)
 
 My super SIMPLE sample app to test out Jenkins. node.js w/ test script
@@ -50,7 +51,6 @@ $ ssh -i /path/to/key.pem ec2-user@your.instance.ip
 
 `$ git clone https://github.com/your-user/your-repo.git`
 
-New text
 or
 `$ git clone https://github.com/aetas-github-training/final-exercise.git`
 
