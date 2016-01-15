@@ -50,6 +50,7 @@ $ ssh -i /path/to/key.pem ec2-user@your.instance.ip
 
 `$ git clone https://github.com/your-user/your-repo.git`
 
+New text
 or
 `$ git clone https://github.com/aetas-github-training/final-exercise.git`
 
