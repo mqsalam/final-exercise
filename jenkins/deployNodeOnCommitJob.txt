@@ -1,0 +1,7 @@
+#!/bin/sh
+sudo docker exec -i node-app bash <<EOF
+git pull
+npm install --production
+exit
+EOF
+sudo docker restart node-app
