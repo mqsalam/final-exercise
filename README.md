@@ -56,4 +56,6 @@ or
 
 ###Create and run the docker containers in detached mode using the docker-compose.yml file.
 
+`$ cd final-exercise`
+
 `$ docker-compose up -d`
