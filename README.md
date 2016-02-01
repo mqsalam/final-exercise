@@ -10,9 +10,9 @@ Mocha testing framework
 
 
 
-**CI server for this Training is http://52.90.96.210:8080**
+**CI server for this Training is **
 
-**App server Public IP http://52.90.96.210**
+**App server Public IP  **
 
 ##Set up the pipeline demo on an Amazon EC2 instance running Amazon Linux
 
@@ -27,8 +27,9 @@ Mocha testing framework
 ###Install docker-compose.
 ```
 $ sudo su
-$ curl -L https://github.com/docker/compose/releases/download/1.5.2/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
-$ chmod +x /usr/local/bin/docker-compose
+$ curl -L https://github.com/docker/compose/releases/download/1.5.2/docker-compose-`uname -s`-`uname -m` > /opt/bin/docker-compose
+$ chmod +x /opt/bin/docker-compose
+$ export PATH=/opt/bin:$PATH
 $ exit
 ```
 
@@ -40,7 +41,7 @@ $ exit
 
 ```
 $ exit
-$ ssh -i /path/to/key.pem ec2-user@your.instance.ip
+$ ssh -i /path/to/key.pem username@your.instance.ip
 ```
 
 ###Start the docker service.
