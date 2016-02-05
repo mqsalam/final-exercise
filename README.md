@@ -1,4 +1,4 @@
-# hello-jenkins!
+# hello-jenkins
 
 [![Build Status](https://52.90.96.210/jenkins/buildStatus/icon?job=Deploy Node on Commit)](http://52.90.96.210/jenkins/job/Deploy%20Node%20on%20Commit/)
 
