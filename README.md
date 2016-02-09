@@ -25,8 +25,7 @@ Mocha testing framework
 ###Install docker-compose.
 ```
 $ sudo su
-$ mkdir /opt
-$ mkdir /opt/bin
+$ mkdir /opt /opt/bin
 $ curl -L https://github.com/docker/compose/releases/download/1.5.2/docker-compose-`uname -s`-`uname -m` > /opt/bin/docker-compose
 $ chmod +x /opt/bin/docker-compose
 $ export PATH=/opt/bin:$PATH
@@ -50,9 +49,6 @@ $ ssh -i /path/to/key.pem username@your.instance.ip
 
 ###Clone the GitHub repository to the instance.
 
-`$ git clone https://github.com/your-user/your-repo.git`
-
-or
 `$ git clone https://github.com/aetas-github-training/final-exercise.git`
 
 ###Create and run the docker containers in detached mode using the docker-compose.yml file.
