@@ -4,11 +4,8 @@ jenkins:
   ports: 
    - 8080:8080
   volumes:
-   - /home/ec2-user/final-exercise:/var/jenkins
-   - /var/run/docker.sock:/var/run/docker.sock
-   - /usr/bin/docker:/usr/bin/docker
-   - /lib64/libdevmapper.so.1.02:/usr/lib/libdevmapper.so.1.02
-   - /lib64/libudev.so.0:/usr/lib/libudev.so.0
+   - /home/core/final-exercise:/var/jenkins
+   - /home/core/ssh/:/var/jenkins
 node-app:
   container_name: node-app
   build: .
