@@ -29,15 +29,15 @@ That's it!
 
 ##To install the prerequisites on an Amazon EC2 instance running Amazon Linux
 
-Update the instance.
+Update the instance:
 
 `$ sudo yum update -y`
 
-Install docker and git.
+Install docker and git:
 
 `$ sudo yum install -y docker git`
 
-Install docker-compose.
+Install docker-compose:
 ```
 $ sudo su
 $ mkdir /opt /opt/bin
@@ -51,13 +51,13 @@ Add the current user to the docker permissions group...
 
 `$ sudo usermod -aG docker ec2-user`
 
-...and reconnect to your instance for the change to take effect.
+...and reconnect to your instance for the change to take effect:
 
 ```
 $ exit
 $ ssh -i /path/to/key.pem username@your.instance.ip
 ```
 
-Start the docker service.
+Start the docker service:
 
 `$ sudo service docker start`
