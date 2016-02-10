@@ -4,20 +4,7 @@ My super SIMPLE sample app to test out Jenkins. node.js w/ test script
 
 [Tutorial to build the project](http://code.tutsplus.com/tutorials/setting-up-continuous-integration-continuous-deployment-with-jenkins--cms-21511)
 
-## Build the application
-
-Clone the GitHub repository to the instance.
-
-`$ git clone https://github.com/aetas-github-training/final-exercise.git`
-
-Create and run the docker containers in detached mode using the docker-compose.yml file.
-
-```
-$ cd final-exercise
-$ docker-compose up -d
-```
-
-That's it!  Prerequisites for running the application via docker-compose:
+Prerequisites for running the application via docker-compose (see below):
 
 * Docker
 
@@ -25,7 +12,22 @@ That's it!  Prerequisites for running the application via docker-compose:
 
 * Docker-Compose
 
-##Install the prerequisites on an Amazon EC2 instance running Amazon Linux
+## To build the application
+
+Clone the GitHub repository to the instance:
+
+`$ git clone https://github.com/aetas-github-training/final-exercise.git`
+
+Create and run the docker containers in detached mode using the docker-compose.yml file:
+
+```
+$ cd final-exercise
+$ docker-compose up -d
+```
+
+That's it!
+
+##To install the prerequisites on an Amazon EC2 instance running Amazon Linux
 
 Update the instance.
 
