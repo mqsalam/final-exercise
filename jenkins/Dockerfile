@@ -7,5 +7,12 @@ RUN apt-get update \
 RUN echo "jenkins ALL=NOPASSWD: ALL" >> /etc/sudoers
 
 USER jenkins
+
+RUN mkdir /var/jenkins_home/jobs/deploy-app-on-push/
+COPY jobs/deploy-app-on-push/config.xml /var/jenkins_home/jobs/deploy-app-on-push/config.xml
+
+RUN mkdir /var/jenkins_home/scripts/
+COPY ./scripts /var/jenkins_home/scripts/
+
 COPY plugins.txt /usr/share/jenkins/plugins.txt
 RUN /usr/local/bin/plugins.sh /usr/share/jenkins/plugins.txt
