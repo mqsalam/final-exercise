@@ -1,18 +1,13 @@
 FROM jenkins:1.596
 
-USER root
-RUN apt-get update \
-      && apt-get install -y sudo \
-      && rm -rf /var/lib/apt/lists/*
-RUN echo "jenkins ALL=NOPASSWD: ALL" >> /etc/sudoers
-
 USER jenkins
 
-RUN mkdir /var/jenkins_home/jobs/deploy-app-on-push/
-COPY jobs/deploy-app-on-push/config.xml /var/jenkins_home/jobs/deploy-app-on-push/config.xml
+WORKDIR /var/jenkins_home
 
-RUN mkdir /var/jenkins_home/scripts/
-COPY ./scripts /var/jenkins_home/scripts/
+COPY jobs/deploy-app-on-push/config.xml /usr/share/jenkins/ref/jobs/deploy-app-on-push/config.xml
 
-COPY plugins.txt /usr/share/jenkins/plugins.txt
-RUN /usr/local/bin/plugins.sh /usr/share/jenkins/plugins.txt
+RUN mkdir scripts/
+COPY ./scripts scripts/
+
+COPY plugins.txt plugins.txt
+RUN /usr/local/bin/plugins.sh plugins.txt

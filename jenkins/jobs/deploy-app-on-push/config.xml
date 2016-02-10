@@ -38,16 +38,7 @@
   <builders>
     <hudson.tasks.Shell>
       <command>#!/bin/sh
-cd /var/jenkins/
-export IP=`/sbin/ip route|awk &apos;/default/ { print $3 }&apos;`
-ssh -o StrictHostKeyChecking=no -i ./DockerPipelineDemo.pem core@$IP &lt;&lt;EOF
-        docker stop node-app &amp;&amp; docker rm node-app
-	cd final-exercise
-	git pull
-	docker build -t node-app:latest .
-	docker run -p 80:80 --name=node-app -d node-app:latest
-	exit
-EOF</command>
+bash /var/jenkins_home/scripts/deploy-app-on-push.sh</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers/>
