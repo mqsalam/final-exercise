@@ -22,7 +22,7 @@ public class example  {
     	String baseUrl, hubUrl;
     	
     	baseUrl = "app";
-    	hubUrl = "http://selhub:5900/wd/hub";
+    	hubUrl = "http://selhub:4444/wd/hub";
     	DesiredCapabilities capability = DesiredCapabilities.firefox();
     	capability.setBrowserName("firefox");
     	capability.setPlatform(Platform.LINUX);
