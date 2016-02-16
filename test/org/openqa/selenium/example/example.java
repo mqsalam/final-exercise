@@ -22,13 +22,13 @@ public class example  {
     	String baseUrl, hubUrl;
     	
     	baseUrl = "app";
-    	hubUrl = "selhub:4444/wd/hub";
+    	hubUrl = "hub:4444/wd/hub";
     	DesiredCapabilities capability = DesiredCapabilities.firefox();
     	capability.setBrowserName("firefox");
     	capability.setPlatform(Platform.LINUX);
     	
     	webdriver.driver=remote;
-    	webdriver.remote.url=selhub:4444/wd/hub;
+    	webdriver.remote.url=hub:4444/wd/hub;
     	webdriver.remote.driver=firefox;
     	webdriver.remote.OS=linux;
     	
