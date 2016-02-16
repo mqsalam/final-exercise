@@ -18,7 +18,7 @@ public class example  {
     	String baseUrl, hubUrl;
     	
     	baseUrl = "http://54.152.53.212";
-    	hubUrl = "http://172.17.2.79:4444/wd/hub";
+    	hubUrl = "http://54.152.53.212:4444/wd/hub";
     	DesiredCapabilities capability = DesiredCapabilities.firefox();
     	capability.setBrowserName("firefox");
     	capability.setPlatform(Platform.LINUX);
