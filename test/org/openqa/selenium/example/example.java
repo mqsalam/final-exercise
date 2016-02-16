@@ -27,6 +27,11 @@ public class example  {
     	capability.setBrowserName("firefox");
     	capability.setPlatform(Platform.LINUX);
     	
+    	webdriver.driver=remote;
+    	webdriver.remote.url=selhub:4444/wd/hub;
+    	webdriver.remote.driver=firefox;
+    	webdriver.remote.OS=linux;
+    	
     	driver = new RemoteWebDriver(
     			new URL(hubUrl), capability);
 
