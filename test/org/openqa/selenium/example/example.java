@@ -17,7 +17,7 @@ public class example  {
     	WebDriver driver;
     	String baseUrl, hubUrl;
     	
-    	baseUrl = "app";
+    	baseUrl = "http://app";
     	hubUrl = "http://selhub:4444/wd/hub";
     	DesiredCapabilities capability = DesiredCapabilities.firefox();
     	capability.setBrowserName("firefox");
