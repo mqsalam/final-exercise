@@ -21,7 +21,7 @@ public class example  {
     	hubUrl = "http://54.152.53.212:4444/wd/hub";
     	DesiredCapabilities capability = DesiredCapabilities.firefox();
     	capability.setBrowserName("firefox");
-    	capability.setPlatform(Platform.LINUX);
+    	//capability.setPlatform(Platform.LINUX);
     	
     	driver = new RemoteWebDriver(
     			new URL(hubUrl), capability);
