@@ -13,17 +13,16 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 
 public class example  {
     public static void main(String[] args) throws MalformedURLException {
-    	
+
     	WebDriver driver;
     	String baseUrl, hubUrl;
-    	
-    	baseUrl = "http://app";
-    	hubUrl = "http://selhub:4444/wd/hub";
+
+    	baseUrl = "http://54.152.53.212";
+    	hubUrl = "http://54.152.53.212:4444/wd/hub";
     	DesiredCapabilities capability = DesiredCapabilities.firefox();
     	capability.setBrowserName("firefox");
-    	capability.setPlatform(Platform.LINUX);
-        capability.setVersion(ANY);
-    	
+    	//capability.setPlatform(Platform.LINUX);
+
     	driver = new RemoteWebDriver(
     			new URL(hubUrl), capability);
 
